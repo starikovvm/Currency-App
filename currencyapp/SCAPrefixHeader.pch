@@ -1,0 +1,14 @@
+//
+//  SCAPrefixHeader.pch
+//  currencyapp
+//
+//  Created by Виктор Стариков on 23.09.16.
+//  Copyright © 2016 starikovvm. All rights reserved.
+//
+
+#ifndef SCAPrefixHeader_pch
+#define SCAPrefixHeader_pch
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#endif /* SCAPrefixHeader_pch */

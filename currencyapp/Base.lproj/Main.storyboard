@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-MediumItalic.ttf">
+            <string>Lato-MediumItalic</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SCAMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51,705" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX7-EX-Uxc">
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="80"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="753" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKQ-WT-f0m">
+                                <string key="text">Со вчерашнего дня доллар
+вырос на 1 процент</string>
+                                <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD → RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-Cr-8gF">
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-yM-IS3">
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" image="menuButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ОБНОВЛЕНО В 17:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-Cb-gjj">
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="11"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.40000000000000002" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-RP-Zt8">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" placeholder="YES" id="7Tj-9z-ifh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZAT-MI-aR5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zw6-jp-zDp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ojX-RP-Zt8" secondAttribute="bottom" id="52o-qZ-wpI"/>
+                            <constraint firstItem="ojX-RP-Zt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="710-WD-yxZ"/>
+                            <constraint firstItem="pX7-EX-Uxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BEn-ib-O2H"/>
+                            <constraint firstItem="7lh-yM-IS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bag-Vt-Fg0"/>
+                            <constraint firstAttribute="trailing" secondItem="mKQ-WT-f0m" secondAttribute="trailing" constant="16" id="BjS-Ue-nON"/>
+                            <constraint firstItem="mKQ-WT-f0m" firstAttribute="centerY" secondItem="pX7-EX-Uxc" secondAttribute="baseline" constant="42" id="EY0-Ha-IEJ"/>
+                            <constraint firstItem="tdw-Cr-8gF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Is7-Ou-56n"/>
+                            <constraint firstItem="D9b-Cb-gjj" firstAttribute="centerY" secondItem="7lh-yM-IS3" secondAttribute="centerY" id="M1Z-bQ-Jn0"/>
+                            <constraint firstItem="mKQ-WT-f0m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4o-IO-SR6"/>
+                            <constraint firstItem="D9b-Cb-gjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zkk-pq-tgN"/>
+                            <constraint firstAttribute="trailing" secondItem="ojX-RP-Zt8" secondAttribute="trailing" id="mnt-bI-Xq2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7lh-yM-IS3" secondAttribute="bottom" constant="5" id="sg2-QN-K5a"/>
+                            <constraint firstItem="mKQ-WT-f0m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="250" id="xGJ-T6-nUo"/>
+                            <constraint firstItem="pX7-EX-Uxc" firstAttribute="baseline" secondItem="tdw-Cr-8gF" secondAttribute="baseline" constant="80" id="yJF-f1-wdg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencySelectTableView" destination="ojX-RP-Zt8" id="mwE-yu-eJa"/>
+                        <outlet property="currentConversionDirectionLabel" destination="tdw-Cr-8gF" id="DUE-Tc-uN6"/>
+                        <outlet property="priceLabel" destination="pX7-EX-Uxc" id="GIQ-QB-B5K"/>
+                        <outlet property="selectCurrencyButton" destination="7lh-yM-IS3" id="aDy-eL-dM6"/>
+                        <outlet property="updateDateLabel" destination="D9b-Cb-gjj" id="Wum-je-oSl"/>
+                        <outlet property="yesterdayDifferenceLabel" destination="mKQ-WT-f0m" id="fD7-dM-dTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menuButton" width="21" height="13"/>
+    </resources>
+</document>

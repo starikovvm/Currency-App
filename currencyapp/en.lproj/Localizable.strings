@@ -1,0 +1,23 @@
+/* %@ for time/date value */
+"DATA_UPDATED_AT" = "Data updated at %@";
+
+/* data updating status message */
+"DATA_UPDATING" = "Data updating";
+
+/* Error while fetching today price */
+"EROR_TODAY_PRICE" = "Error while fetching today price";
+
+/* Error while fetching yesterday price */
+"EROR_YESTERDAY_PRICE" = "Error while fetching yesterday price";
+
+/* first %@ for currency, second %@ for percentage */
+//"PRICE_GREATER_THAN_YESTERDAY" = "PRICE_GREATER_THAN_YESTERDAY";
+
+/* first %@ for currency, second %@ for percentage */
+//"PRICE_LESS_THAN_YESTERDAY" = "PRICE_LESS_THAN_YESTERDAY";
+
+"USD" = "dollar";
+
+"EUR" = "euro";
+
+"RUB" = "ruble";
