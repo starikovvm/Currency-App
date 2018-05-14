@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SCACurrencySelectTableViewCell : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UILabel *currencyLabel;
 
 @end

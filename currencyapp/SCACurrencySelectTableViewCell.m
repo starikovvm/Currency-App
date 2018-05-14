@@ -8,6 +8,7 @@
 
 #import "SCACurrencySelectTableViewCell.h"
 
+
 @implementation SCACurrencySelectTableViewCell
 
 - (void)awakeFromNib {
@@ -16,7 +17,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-    self.currencyLabel.font = [UIFont fontWithName:selected?@"Lato-Black":@"Lato-Regular" size:17.0];
+    self.currencyLabel.font = [UIFont fontWithName:selected ? @"Lato-Black" : @"Lato-Regular" size:17.0];
 }
 
 @end

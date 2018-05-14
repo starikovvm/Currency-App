@@ -5,16 +5,10 @@
 "DATA_UPDATING" = "Data updating";
 
 /* Error while fetching today price */
-"EROR_TODAY_PRICE" = "Error while fetching today price";
+"ERROR_TODAY_PRICE" = "Error while fetching today price";
 
 /* Error while fetching yesterday price */
-"EROR_YESTERDAY_PRICE" = "Error while fetching yesterday price";
-
-/* first %@ for currency, second %@ for percentage */
-//"PRICE_GREATER_THAN_YESTERDAY" = "PRICE_GREATER_THAN_YESTERDAY";
-
-/* first %@ for currency, second %@ for percentage */
-//"PRICE_LESS_THAN_YESTERDAY" = "PRICE_LESS_THAN_YESTERDAY";
+"ERROR_YESTERDAY_PRICE" = "Error while fetching yesterday price";
 
 "USD" = "dollar";
 

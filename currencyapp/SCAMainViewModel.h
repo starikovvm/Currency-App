@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SCAMainViewModel : NSObject
 
 //Contains strings representing conversion directions
@@ -19,16 +20,16 @@
 //BOOL
 @property (strong, nonatomic) RACSignal *showCurrencySelectionSignal;
 
-//Result for conversion, NSDecimalNumver
+//Result for conversion, NSDecimalNumber
 @property (strong, nonatomic) RACSignal *todayPriceSignal;
 
-//Result for conversion, NSDecimalNumver
+//Result for conversion, NSDecimalNumber
 @property (strong, nonatomic) RACSignal *yesterdayPriceSignal;
 
-@property (nonatomic) NSInteger currentConversionDirectionIndex;
+@property (assign, nonatomic) NSUInteger currentConversionDirectionIndex;
 @property (strong, nonatomic) NSDate *dataUpdatedDate;
 
--(void)toggleShowCurrencySelection;
--(NSString*)currentToSymbolString;
+- (void)toggleShowCurrencySelection;
+- (NSString *)currentToSymbolString;
 
 @end

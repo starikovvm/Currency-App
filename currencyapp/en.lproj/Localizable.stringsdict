@@ -21,11 +21,11 @@ fell by</string>
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
+			<string>f</string>
 			<key>one</key>
-			<string>%d percent</string>
+			<string>%@ percent</string>
 			<key>other</key>
-			<string>%d percents</string>
+			<string>%@ percents</string>
 		</dict>
 	</dict>
 	<key>PRICE_GREATER_THAN_YESTERDAY</key>
@@ -47,11 +47,11 @@ rose by</string>
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
+			<string>f</string>
 			<key>one</key>
-			<string>%d percent</string>
+			<string>%@ percent</string>
 			<key>other</key>
-			<string>%d percents</string>
+			<string>%@ percents</string>
 		</dict>
 	</dict>
 </dict>

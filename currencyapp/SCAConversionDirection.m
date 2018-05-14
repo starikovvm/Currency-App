@@ -8,18 +8,32 @@
 
 #import "SCAConversionDirection.h"
 
-NSString* const kRUBSymbol = @"RUB";
-NSString* const kEURSymbol = @"EUR";
-NSString* const kUSDSymbol = @"USD";
+
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCNotLocalizedStringInspection"
+NSString *const kRUBSymbol = @"RUB";
+#pragma clang diagnostic pop
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCNotLocalizedStringInspection"
+NSString *const kEURSymbol = @"EUR";
+#pragma clang diagnostic pop
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCNotLocalizedStringInspection"
+NSString *const kUSDSymbol = @"USD";
+#pragma clang diagnostic pop
+
 
 @implementation SCAConversionDirection
 
--(NSString *)description {
+- (NSString *)description {
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCNotLocalizedStringInspection"
     return [NSString stringWithFormat:@"%@ → %@", self.fromSymbol, self.toSymbol];
+#pragma clang diagnostic pop
 }
 
-+(instancetype)conversionDirectionFrom:(NSString*)fromSymbol to:(NSString*)toSymbol {
-    SCAConversionDirection* direction = [[self alloc] init];
++ (instancetype)conversionDirectionFrom:(NSString *)fromSymbol to:(NSString *)toSymbol {
+    SCAConversionDirection *direction = [[self alloc] init];
     direction.fromSymbol = fromSymbol;
     direction.toSymbol = toSymbol;
     return direction;

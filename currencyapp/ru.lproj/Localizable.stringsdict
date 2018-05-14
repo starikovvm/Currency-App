@@ -21,15 +21,15 @@
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
+			<string>f</string>
 			<key>one</key>
-			<string>%d процент</string>
+			<string>%@ процент</string>
 			<key>few</key>
-			<string>%d процента</string>
+			<string>%@ процента</string>
 			<key>many</key>
-			<string>%d процентов</string>
+			<string>%@ процентов</string>
 			<key>other</key>
-			<string>%d процента</string>
+			<string>%@ процента</string>
 		</dict>
 	</dict>
 	<key>PRICE_GREATER_THAN_YESTERDAY</key>
@@ -51,15 +51,15 @@
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
+			<string>f</string>
 			<key>one</key>
-			<string>%d процент</string>
+			<string>%@ процент</string>
 			<key>few</key>
-			<string>%d процента</string>
+			<string>%@ процента</string>
 			<key>many</key>
-			<string>%d процентов</string>
+			<string>%@ процентов</string>
 			<key>other</key>
-			<string>%d процента</string>
+			<string>%@ процента</string>
 		</dict>
 	</dict>
 </dict>
