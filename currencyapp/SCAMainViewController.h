@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCAMainViewController : UIViewController
 
+@interface SCAMainViewController : UIViewController
 
 @end

@@ -9,6 +9,6 @@
 #ifndef SCAPrefixHeader_pch
 #define SCAPrefixHeader_pch
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 #endif /* SCAPrefixHeader_pch */

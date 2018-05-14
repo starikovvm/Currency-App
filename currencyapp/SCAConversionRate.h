@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "SCAConversionDirection.h"
 
+
 @interface SCAConversionRate : NSObject
 
--(instancetype)initWithDictionary:(NSDictionary*)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @property (strong, nonatomic) NSString *baseCurrency;
-@property (strong, nonatomic) NSDictionary<NSString*,NSDecimalNumber*> *currencyRates;
--(NSDecimalNumber*)resultForConversionDirection:(SCAConversionDirection*)direction;
+@property (strong, nonatomic) NSDictionary<NSString *, NSDecimalNumber *> *currencyRates;
+
+- (NSDecimalNumber *)resultForConversionDirection:(SCAConversionDirection *)direction;
+
 @end
